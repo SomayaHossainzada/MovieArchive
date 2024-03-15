@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(161, 161, 106);
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color: rgba(0, 0, 0,0.8);
+}
+
+.nav-list{
+    list-style-type: none;
+    text-align: center;
+}
+.nav-item{
+    display:inline-block;
+    padding:10px;
+    margin-left:10px;
+}
+.nav-item a{
+    text-decoration: none;
+    display: inline-block;
+    padding:6px;
+    color:white;
+    border-radius: 2px;
+}
+.nav-item a:hover{
+    background-color: rgb(253, 4, 4);
+}
+
+.top-section{
+    margin:60px 0 35px;
+}
+
+h2{
+    text-align: center;
+    padding:20px;
+}
+.top-img{
+    height:100vh;
+    margin:22px;
+}
+.top-img img{
+    width:100%;
+    height:100%;
+    background-size: cover;
+
+}
+.top-desc{
+    margin:16px;
+}
+
+.flex-container, .mov-flex-container, .mov-flex-container2{
+    display:flex;
+    gap:6%;
+    padding:4%;
+    padding-bottom: 60px;
+}
+
+.mov-flex-container, .mov-flex-container2{
+    margin-top:60px;
+    padding-bottom: 0;
+
+}
+
+.mov-flex-container2{
+    margin-bottom: 60px;
+}
+
+.flex-item, .mov-flex-item{
+    background-color: rgba(0, 0, 0,0.9);
+    width:30%;
+    height:300px;
+    border:10px rgb(54, 53, 53) solid;
+    border-radius: 4px;
+    overflow:hidden;
+}
+
+.mov-flex-item{
+    background-color:rgb(54, 53, 53);
+}
+
+.flex-item{
+    position:relative;
+    transition: transform .5s;
+}
+
+.play-icon{
+    text-decoration: none;
+    font-size:36px;
+    color:red;
+    z-index:1;
+    position: absolute;
+    margin:40% 40%;
+    display:none;
+}
+
+.flex-item:hover,
+.mov-flex-item:hover{
+    transform: scale(1.1);
+   
+}
+.flex-item:hover  :nth-child(1),
+.mov-flex-item:hover :nth-child(1) {
+    display: block;
+}
+
+
+.movie-img{
+    height:90%;
+    width:100%;
+}
+.movie-img img{
+    height:100%;
+    width:100%;
+}
+
+.mov-img{
+    height:80%;
+    width:60%;
+    margin:8px auto;
+}
+
+.mov-img img{
+    height:100%;
+    width:100%;
+}
+
+.movie-title{
+    width:100%;
+    height:10%;
+    background-color:rgb(54, 53, 53) ;
+    color:red;
+    text-align:center;
+    font-size:16px;
+    padding:12px;
+}
+
+.mov-title{
+    height:20%;
+    color:red;
+    text-align:center;
+    font-size:16px;
+}
+.score{
+    color:white;
+}
+
+.movie-detail-container{
+    background-color: rgb(54, 53, 53);
+    margin:70px auto;
+    width:70%;
+    padding:16px; 
+    text-align: center;
+}
+.movie-detail-poster{
+    width:100%;
+    height:400px;
+}
+.movie-detail-poster img{
+    height:100%;
+    width:100%;
+}
+.movie-detail-container h2{
+    text-align:center;
+    color:red;
+}
+
+.movie-detail-container p{
+    color:white;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.movie-detail-container button{
+    height:40px;
+    width:80px;
+    background-color: red;
+    border:4px red solid;
+    border-radius: 4px;
+    margin:28px 0 12px;
+}
+
+.movie-detail-container button a{
+    text-decoration:none;
+    color:white;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.movie-container{
+    margin:76px auto;
+    background-color:rgb(54, 53, 53);
+    width:80%;
+    height:70vh;
+}
+
+.movie-container video{
+    height:100%;
+    width:100%;
+}
+
+.footer-part{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:40px;
+    background-color: rgba(0, 0, 0,0.9);
+    text-align: center;
+    padding:10px;
+}
+.footer-part p{
+    color:white;
+}
+
+.pigination{
+    background-color:white;
+    width:46%;
+    display: flex;
+    padding:10px 20px;
+    border-radius: 50px;
+    margin:0 auto 80px;
+}
+
+.pigination li{
+    list-style-type: none;
+    line-height: 50px;
+    margin:auto;
+    
+}
+
+.pigination li a{
+    display:block;
+    text-decoration: none;
+    color:#1d2630;
+    border-radius:50%;
+}
+
+.pigination li.page{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+}
+
+.pigination li.page:hover a,
+.pigination li.page.active a{
+    background-color:red;
+    color:white;
+    font-weight: bold;
+}
+
+.prev:hover a,
+.next:hover a{
+    color:red;
+}
+
+.prev, .next{
+    font-weight: bold;
+    font-size:20px;
+}
